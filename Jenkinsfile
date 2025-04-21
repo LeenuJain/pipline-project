@@ -68,7 +68,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'test-reports/results.xml'
+                    junit 'results.xml'
                     recordCoverage(tools: [[parser: 'COBERTURA', pattern: 'coverage-reports/coverage.xml']])
                 }
             }
