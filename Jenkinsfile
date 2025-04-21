@@ -43,7 +43,7 @@ pipeline {
                         bat '''
                             venv\\Scripts\\activate
                             pip install flake8
-                            flake8 src\\ tests\\ --count --select=E9,F63,F7,F82 --show-source --statistics
+                            flake8 src\\ test\\ --count --select=E9,F63,F7,F82 --show-source --statistics
                         '''
                     }
                 }
